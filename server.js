@@ -7,8 +7,7 @@ const PORT = process.env.PORT;
 app.use(express.json());
 const allowedOrigin = [
   "http://localhost:3000",
-  "http://127.0.0.1:3000",
-  "http://localhost:4173",
+  "https://netflixclon3.netlify.app"
 ];
 app.use(cors({ origin: allowedOrigin, credentials: true }));
 app.use(cookieParser());
